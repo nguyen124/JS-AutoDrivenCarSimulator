@@ -1,4 +1,5 @@
 define(['Class', 'NeuronsLayer', 'Genome', 'Neuron'], function (Class, NeuronsLayer, Genome, Neuron) {
+	"use strict"
 	var NeuralNetwork = Class.extend({
 			init: function () {
 				this.inputAmount = 0;

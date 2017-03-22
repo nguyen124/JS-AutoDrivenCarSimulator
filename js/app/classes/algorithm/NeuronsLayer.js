@@ -1,4 +1,5 @@
 define(['Class', 'Neuron', 'Util'], function (Class, Neuron, Util) {
+	"use strict"
 	var BIAS = -1;
 	var NeuronsLayer = Class.extend({
 			init: function () {
