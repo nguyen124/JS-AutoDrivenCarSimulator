@@ -58,7 +58,7 @@ define(['Class', 'Display', 'State', 'GameState','KeyManager','Handler','Camera'
 	}
 	Game.prototype.run = function () {
 		init();
-		var fps = 30;
+		var fps = 60;
 		var timePerTick = 1000 / fps;
 		var now;
 		var lastTime = Date.now();

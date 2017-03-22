@@ -12,7 +12,7 @@ define(['Jquery'],function($){
 		return string;
 	}
 	Util.RandomSigmoid = function(){		
-		var r =  Math.random() -  Math.random();
+		var r =  Util.random() -  Util.random();
 		return r;
 	}
 	/*
@@ -22,7 +22,11 @@ define(['Jquery'],function($){
 		var ap = (-a) / p;
 		return (1 / (1 + Math.exp(ap)));
 	}
-
+	//var seed = 1;
+	Util.random = function() {
+		return Math.random();	
+	}
+	//Util.seed = seed;
 	/*
 	 * compare value of a to b and c. If is smaller then b or greater than c, a will become b or c
 	 */
