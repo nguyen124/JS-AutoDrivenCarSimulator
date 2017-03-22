@@ -34,7 +34,11 @@ define(['Entity', 'Tile'], function (Entity, Tile) {
 				}
 			},
 			collisionWithTile(_x, _y) {
-				return this.handler.getMap().getTile(_x, _y).isSolid();
+				var tile = this.handler.getMap().getTile(_x, _y);
+				if(tile != null && tile!= undefined){
+					return tile.isSolid();
+				}
+				return false;
 			},
 			moveY: function (movingY) {
 				this.yMove = movingY
